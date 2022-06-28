@@ -14,6 +14,11 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1>Welcome, Traveller.</h1>
+        <button type="button" onClick={() => {
+    throw new Error("Sentry Frontend Error");
+}}>
+    Throw error
+</button>
       </main>
 
       <footer className={styles.footer}></footer>
